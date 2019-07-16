@@ -21,7 +21,7 @@ DOWNLOAD_PATH_TAR="$DOWNLOAD_PATH.tar.gz"
 wget -O "$DOWNLOAD_PATH_TAR" "https://dl.fbaipublicfiles.com/drqa/data.tar.gz"
 
 # Untar
-tar -xvf "$DOWNLOAD_PATH_TAR"
+tar -xvf "$DOWNLOAD_PATH_TAR" --exclude="wikipedia"
 
 # Remove tar ball
 rm "$DOWNLOAD_PATH_TAR"
